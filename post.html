@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - MyBlog</title>
+    <meta name="description" content="Read our latest blog posts about web development and technology">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/post-style.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><i class="fas fa-pen-fancy"></i> MyBlog</h1>
+            <nav class="nav">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html"><i class="fas fa-user"></i> About</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <main class="post-wrapper">
+        <!-- Table of Contents Sidebar -->
+        <aside class="toc-sidebar" id="tocSidebar">
+            <div class="toc-header">
+                <h3><i class="fas fa-list"></i> Contents</h3>
+                <button class="toc-toggle" id="tocToggle">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+            <nav id="tocList" class="toc-list"></nav>
+        </aside>
+
+        <article class="post-container" id="postContainer">
+            <!-- Content will be dynamically inserted here -->
+        </article>
+
+        <!-- Sidebar with engagement features -->
+        <aside class="engagement-sidebar">
+            <div class="engagement-widget">
+                <h4><i class="fas fa-lightbulb"></i> Tips</h4>
+                <p id="engagementTip"></p>
+            </div>
+            <div class="engagement-widget">
+                <h4><i class="fas fa-clock"></i> Reading Time</h4>
+                <p id="readingTime">10 min</p>
+            </div>
+            <div class="engagement-widget">
+                <h4><i class="fas fa-share-alt"></i> Share</h4>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Related Posts Section -->
+    <section class="related-posts">
+        <div class="container">
+            <h2><i class="fas fa-arrow-right"></i> Related Posts</h2>
+            <div class="related-posts-grid" id="relatedPosts"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MyBlog</h3>
+                    <p>Sharing knowledge and inspiration through creative content.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">© 2026 MyBlog. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/post-handler.js"></script>
+</body>
+</html>

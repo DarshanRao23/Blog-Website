@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Share Your Stories</title>
+    <meta name="description" content="A modern blog sharing insights about technology, coding, and web development">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+   <header class="header">
+    <div class="container">
+        <h1 class="logo"><i class="fas fa-pen-fancy"></i> MyBlog</h1>
+
+        <nav class="nav">
+            <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-user"></i> About</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </div>      
+   </header>
+
+   <main class="container">
+    <div class="hero-section">
+        <h2>Welcome to MyBlog</h2>
+        <p>Discover stories, articles, and insights about technology and web development</p>
+    </div>
+
+    <section class="posts">
+        <article class="post">
+            <div class="post-image-wrapper">
+                <img src="assests/sample-post.jpg" alt="Blogging Setup with Laptop">
+                <span class="post-category">Tutorials</span>
+            </div>
+            <h2 class="post-title">How to Start Blogging</h2>
+            <p class="post-desc">
+                Learn the essential steps to start your blogging journey and share your ideas with the world
+            </p>
+            <div class="post-meta">
+                <span><i class="far fa-clock"></i> 5 min read</span>
+                <a href="post.html?id=how-to-start-blogging" class="read-more">Read More</a>
+            </div>
+        </article>
+
+        <article class="post">
+            <div class="post-image-wrapper">
+                <img src="assests/sample-post.jpg" alt="Web Development Setup">
+                <span class="post-category">Development</span>
+            </div>
+            <h2 class="post-title">Top 5 Web Dev Tips</h2>
+            <p class="post-desc">
+                Master these essential web development tips to enhance your frontend development skills
+            </p>
+            <div class="post-meta">
+                <span><i class="far fa-clock"></i> 10 min read</span>
+                <a href="post.html?id=top-5-web-dev-tips" class="read-more">Read More</a>
+            </div>
+        </article>
+    </section>
+
+    <div class="newsletter-section">
+        <h3><i class="fas fa-envelope-open-text"></i> Subscribe to Our Newsletter</h3>
+        <p>Get the latest articles and tips directly in your inbox!</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+   </main>
+
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MyBlog</h3>
+                <p>Sharing knowledge and inspiration through creative content.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 MyBlog. All rights reserved.</p>
+    </div>
+   </footer>
+
+   <script src="js/script.js"></script> 
+</body>
+</html>
